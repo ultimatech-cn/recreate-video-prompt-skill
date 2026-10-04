@@ -1,0 +1,9 @@
+{
+  "reference_video_ref": "attachments/reference-video.mp4",
+  "identity_image_refs": ["attachments/character-image.jpg"],
+  "supplemental_requirements": "Preserve the exact three-stage movement and handheld timing. Change the location and wardrobe. No text or editing instructions. Use ultra-realistic smartphone footage.",
+  "target_video_model": "unknown",
+  "output_mode": "json",
+  "creative_remake": true,
+  "exclude_postproduction": true
+}

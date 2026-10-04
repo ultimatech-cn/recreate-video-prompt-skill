@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/recreate-video-prompt/output.schema.json",
+  "title": "Video Recreation Prompt Output",
+  "type": "object",
+  "required": [
+    "video_summary",
+    "core_hook",
+    "must_preserve",
+    "intentional_changes",
+    "generation_prompt",
+    "negative_prompt",
+    "duration_seconds",
+    "aspect_ratio",
+    "reference_video_required"
+  ],
+  "properties": {
+    "video_summary": {"type": "string"},
+    "core_hook": {"type": "string"},
+    "must_preserve": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "intentional_changes": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "generation_prompt": {
+      "type": "string",
+      "minLength": 1
+    },
+    "negative_prompt": {"type": "string"},
+    "duration_seconds": {
+      "type": "number",
+      "minimum": 0
+    },
+    "aspect_ratio": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reference_video_required": {"type": "boolean"}
+  },
+  "additionalProperties": false
+}

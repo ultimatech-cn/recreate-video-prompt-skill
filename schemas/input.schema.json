@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/recreate-video-prompt/input.schema.json",
+  "title": "Video Recreation Prompt Input",
+  "type": "object",
+  "required": ["reference_video_ref", "identity_image_refs"],
+  "properties": {
+    "reference_video_ref": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Attachment ID, local path, URL, or other media reference available to the executing agent."
+    },
+    "identity_image_refs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "description": "Ordered identity-image references. Image 1 is the primary identity source."
+    },
+    "supplemental_requirements": {
+      "type": "string",
+      "default": ""
+    },
+    "target_video_model": {
+      "type": "string",
+      "default": "unknown"
+    },
+    "output_mode": {
+      "type": "string",
+      "enum": ["prompt", "json"],
+      "default": "prompt"
+    },
+    "creative_remake": {
+      "type": "boolean",
+      "default": true
+    },
+    "exclude_postproduction": {
+      "type": "boolean",
+      "default": true
+    },
+    "upstream_video_analysis": {
+      "type": "object",
+      "description": "Optional trusted analysis for agents that cannot inspect the video directly.",
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}

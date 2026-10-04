@@ -1,0 +1,15 @@
+{
+  "name": "recreate-video-prompt",
+  "version": "1.0.0",
+  "description": "Vendor-neutral multimodal agent skill for analyzing reference videos and identity images and producing stable AI video-generation prompts.",
+  "entrypoint": "SKILL.md",
+  "system_prompt": "prompts/agent-system-prompt.md",
+  "input_schema": "schemas/input.schema.json",
+  "output_schema": "schemas/output.schema.json",
+  "capabilities": [
+    "video-understanding",
+    "image-understanding",
+    "prompt-generation",
+    "structured-output"
+  ]
+}

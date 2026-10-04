@@ -1,0 +1,19 @@
+{
+  "video_summary": "An adult character performs a short playful physical trick while a friend reacts.",
+  "core_hook": "A clearly readable three-stage action followed by an immediate reaction.",
+  "must_preserve": [
+    "Preserve the action order and brief pause before the release.",
+    "Preserve realistic contact, gravity, object trajectory, and handheld reframing.",
+    "Preserve the friend's immediate reaction and the final confident expression."
+  ],
+  "intentional_changes": [
+    "Use the supplied identity image instead of the reference person.",
+    "Move the action to a different nightlife location.",
+    "Use a different outfit and color palette."
+  ],
+  "generation_prompt": "Create an ultra-photorealistic vertical smartphone video using the supplied identity image as the only character reference. Preserve the reference video's chronological three-stage action, contact mechanics, reaction timing, and handheld camera relationship while changing the location, outfit, and decor. Make each physical beat clear, plausible, and continuous. Use ordinary phone exposure, practical lighting, natural skin texture, mild sensor noise, realistic motion blur, believable body weight, fabric response, gravity, and object trajectory. End with the same reaction rhythm and confident expression. No text, captions, logos, editing instructions, identity drift, anatomical distortion, duplicated objects, floating objects, or impossible motion.",
+  "negative_prompt": "text, captions, logos, identity drift, anatomical distortion, duplicated objects, floating objects, impossible trajectory",
+  "duration_seconds": 6,
+  "aspect_ratio": "9:16",
+  "reference_video_required": true
+}
