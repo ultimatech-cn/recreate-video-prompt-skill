@@ -28,7 +28,26 @@ recreate-video-prompt-skill/
     ├── request.json
     └── response.json
 ```
+## Video Examples
 
+### Example
+
+ — Character Replacement
+
+https://github.com/user-attachments/assets/39a3685b-7951-4c8d-b75a-260f127f8a96
+
+**What the skill preserves**
+
+- Core action and chronological motion
+- Camera angle and framing
+- Physical interaction and timing
+- Realistic smartphone-recorded appearance
+
+**What the skill changes**
+
+- Character identity
+- Clothing, props, or environment when requested
+- Non-essential creative elements
 ## Integration options
 
 ### Native skill support
